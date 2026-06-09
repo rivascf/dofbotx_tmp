@@ -1,0 +1,18 @@
+# Variables para definir una meta (GOAL)
+# al ActionServer
+float32 OPEN = -1.4209 # Valor por default para el estatus Gripper -> OPEN
+float32 CLOSE = 0.0 # Valor por default para el estatus Gripper -> CLOSE
+
+float32 gripper_state # Valor para el estatus del Gripper
+float32 duration # tiempo de ejecusion de la tarea
+---
+# Variables para definir el resultado
+# del proceso del ActionServer
+
+float32 current_state # Valor actual del estatus del Gripper
+bool success # Bandera final del proceso
+string string_status_message # Mensaje Final del proceso
+---
+# Definicion de variables par el mensaje de 
+# feeback 
+float32 current_state # Valor intermedio del proceso

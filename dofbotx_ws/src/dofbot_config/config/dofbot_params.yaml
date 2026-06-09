@@ -1,0 +1,15 @@
+/dofbot_config:
+  ros__parameters:
+    joint_names:
+    - base_joint
+    - arm_joint01
+    - arm_joint_02
+    - arm_joint_03
+    - arm_joint_04
+    - arm_joint_05
+    - gripper_joint
+    robot_ip: 192.168.200.128
+    robot_name: VIRTUAL
+    vel_ang: 0.01
+    vel_lin: 0.01
+

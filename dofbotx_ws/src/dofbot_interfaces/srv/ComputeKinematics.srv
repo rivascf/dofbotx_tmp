@@ -1,0 +1,14 @@
+# Petición (Request)
+uint8 FORWARD_KINEMATICS = 1
+uint8 INVERSE_KINEMATICS = 2
+
+uint8 kinematics_mode          # 1 para FK, 2 para IK
+float64[] joint_positions      # Requerido si es FK. Ignorado en IK.
+geometry_msgs/Pose target_pose # Requerido si es IK. Ignorado en FK.
+---
+# Respuesta (Response)
+bool success
+string message
+builtin_interfaces/Duration elapsed_time
+geometry_msgs/Pose calculated_pose    # Resultado si se solicitó FK
+float64[] calculated_joint_positions  # Resultado si se solicitó IK

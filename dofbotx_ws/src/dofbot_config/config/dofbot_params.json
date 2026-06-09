@@ -1,0 +1,73 @@
+{
+  "robot_name": "dofbot_arm",
+  "arm": {
+    "name": "arm_group",
+    "joint_names": [
+      "arm_joint1",
+      "arm_joint2",
+      "arm_joint3",
+      "arm_joint4",
+      "arm_joint5"
+    ]
+  },
+  "gripper": {
+    "name": "gripper_group",
+    "joint_names": [
+      "gripper_joint"
+    ]
+  },
+  "group_states": {
+    "Up": {
+      "group": "arm_group",
+      "joints": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "Down": {
+      "group": "arm_group",
+      "joints": [
+        0,
+        -1.5708,
+        0,
+        0,
+        0
+      ]
+    },
+    "Ready": {
+      "group": "arm_group",
+      "joints": [
+        0,
+        0.7809,
+        -1.5708,
+        -1.5708,
+        0
+      ]
+    },
+    "Home": {
+      "group": "arm_group",
+      "joints": [
+        0,
+        1.5708,
+        -1.5708,
+        -1.5708,
+        0
+      ]
+    },
+    "Close": {
+      "group": "gripper_group",
+      "joints": [
+        0
+      ]
+    },
+    "Open": {
+      "group": "gripper_group",
+      "joints": [
+        -1.4209
+      ]
+    }
+  }
+}
