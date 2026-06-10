@@ -14,6 +14,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   # Aqui van los archivos de mensaje a generar
   # "msg/Telemetry.msg"
   "srv/ComputeKinematics.srv"
+  "srv/SetOledMessage.srv"
   # "action/GripperCmd.action"
   DEPENDENCIES geometry_msgs
 )
